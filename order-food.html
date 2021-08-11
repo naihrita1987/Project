@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Order Food</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="order-food.css">
+    <script src="order-food.js" async></script>
+  </head>
+<body>
+    <header>
+<!--start navbar-->
+<nav class="navbar-expand-lg navbar-dark bg-dark fixed-top p-0">
+    <div class="row">
+        <div class="col"><a class="navbar-brand" href="ordering-app.html"></a>
+            <img src="Images/CR_logo (2).png">
+        </div>
+        <div class="col-2">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link text-center text-md-left" href="#bottom">Cart<i class="fas fa-shopping-cart"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-2">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="Home-order.html" style="font-size: 1.5rem;">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#appetizer" title="appetizer" style="font-size: 1.5rem;">Appetizers</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#main-course" title="main course" style="font-size: 1.5rem;">Main courses</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dessert" title="dessert" style="font-size: 1.5rem;">Desserts</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#drinks1" title="drinks" style="font-size: 1.5rem;">Drinks</a>
+              
+            </li>
+            <li class="nav-item"><a class="nav-link" href="help.html" style="font-size: 1.5rem;">Help</a></li>
+          </ul>
+        </div>
+  </nav> 
+</header>  
+<!--end navbar-->
+
+<!--start appetizer menu-->
+<section id="appetizer">
+<hr>
+<h4 style="text-align: center; color:rgba(184, 132, 132, 0.931);">Appetizer</h4>
+<hr>
+<!--1pic-->
+
+<div class="page-appetizer">
+  <div class="card-columns">
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1572203297789-7d5f432cb47c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzc3fHxvbGl2ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" >
+        <div class="card-body">
+          <h5 class="card-title">Fresh Olives</h5>
+          <p class="card-text">Italian olives</p>
+          <span class="shop-item-price">60:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>    
+    </div>
+    <!--2pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1580638149300-65f0b9e8fbff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1venphcmVsbGElMjBidXJyYXRpbmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Mozarella Burratina</h5>
+          <p class="card-text">with fried shallot and red pepper</p>
+          <span class="shop-item-price">129:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>
+    </div>
+    <!--3pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1529060041742-e924283f4889?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGNoZWVzZSUyMHBsYXRlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Cheese Plate</h5>
+          <p class="card-text">An assortment of cheeses</p>
+          <span class="shop-item-price">150:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>
+    </div>  
+    <!--4pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://siggesfisk.se/img/Toast-Skagen-1200x629.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Toast Skagen</h5>
+          <p class="card-text">Made with Shrimp and Sour Cream</p>
+          <span class="shop-item-price">190:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order"  name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>
+    </div>
+    <!--5pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1619096118293-a34a2f9b7339?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHNrYWdlbiUyMHRvYXN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Mozzarella Toast</h5>
+          <p class="card-text">with fresh basil</p>
+          <span class="shop-item-price">159:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order"  name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>
+    </div>
+    <!--6pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1613769049987-b31b641f25b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHNrYWdlbiUyMHRvYXN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Egg Toast</h5>
+          <p class="card-text">with avocado</p>
+          <span class="shop-item-price">129:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order"  name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>
+    </div>
+    <!--7pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFwcGV0aXplcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Salmon Toast</h5>
+          <p class="card-text">finger salmon toast</p>
+          <span class="shop-item-price">169:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>    
+    </div>
+   <!--8pic--> 
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1610472487806-36e3f7bca240?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGFwcGV0aXplcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Mixed Toasts</h5>
+          <p class="card-text">mixed finger toasts</p>
+          <span class="shop-item-price">159:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order"  name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>
+    </div>
+    <!--9pic-->
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1614181887167-9109747c0c15?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGFwcGV0aXplcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+      <div class="card-body">
+        <h5 class="card-title">Avocado Roll</h5>
+        <p class="card-text">With sashimi</p>
+        <span class="shop-item-price">189:-</span>
+      <div class="shop-item-details">
+        <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+      </div>
+      </div>
+    </div>
+</div>  
+
+</div>
+
+<hr>
+</section>
+<!--end Appetizer menu-->
+
+<!-- Start Main course -->
+<section id="main-course">
+<div class="page-main">
+
+<h4 style="text-align: center; color:rgba(184, 132, 132, 0.931);">MAIN COURSE</h4>
+<hr>
+<!--1pic-->
+<div class="card-columns">
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNhbG1vbiUyMGdyaWxsZWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" >
+        <div class="card-body">
+          <h5 class="card-title">Grilled Salmon</h5>
+          <p class="card-text">With hollandaise sauce</p>
+          <span class="shop-item-price">289:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>    
+    </div>
+    <!--2pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1588791174744-7e9bf4378277?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNpbmdsZSUyMGxvYnN0ZXIlMjB0YWlsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Lobster Tail</h5>
+          <p class="card-text">One lobster tail served with melted garlic butter</p>
+          <span class="shop-item-price">335:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--3pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod/images/delish-filet-mignon-horizontal-1541189043.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Filet Mignon Steak</h5>
+          <p class="card-text">The most tender of all steaks. Served with red wine sauce and new potatoe</p>
+          <span class="shop-item-price">335:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>      
+    </div>  
+    <!--4pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmliZXllfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Ribeye Steak</h5>
+          <p class="card-text">with asparagus and homemade sauce</p>
+          <span class="shop-item-price">335:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>      
+    </div>
+    <!--5pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/2808/1390/files/how-to-cook-rib-of-beef_grande.jpg?v=1526819670">
+        <div class="card-body">
+          <h5 class="card-title">Roasted Rib of Beef</h5>
+          <p class="card-text">Herb-scented slow-roasted rib of beef</p>
+          <span class="shop-item-price">335:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>   
+    </div>
+    <!--6pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1514944617518-12c7891ec602?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGJhcmJlcXVlZCUyMHJpYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Ribs</h5>
+          <p class="card-text">Baby back ribs served with our BBQ sauce.</p>
+          <span class="shop-item-price">295:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>      
+    </div>
+    <!--7pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3JpbGxlZCUyMGNoaWNrZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Grilled Chicken</h5>
+          <p class="card-text">Seasoned with herbs</p>
+          <span class="shop-item-price">225:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>      
+    </div>
+   <!--8pic--> 
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1588013273468-315fd88ea34c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Pasta</h5>
+          <p class="card-text">With parmesan cheese</p>
+          <span class="shop-item-price">225:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>   
+    </div>
+    <!--9pic-->  
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhc3RhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+        <div class="card-body">
+          <h5 class="card-title">Pasta Bolgonese</h5>
+          <p class="card-text">Classic Italian bolognese ragu with parmesan</p>
+          <span class="shop-item-price">229:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+  </div>  
+</section>
+<!--end Main Course menu-->
+
+</div>
+
+<!--start dessert menu-->
+<section id="dessert">
+<div class="page-desserts">
+<hr>
+<h3><b>Dessert</b></h3>
+<hr>
+<!--1pic-->
+<div class="card-columns">
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/creme1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Crème brûlée</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">89:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--2pic-->
+    <div class="card" style="width: 15rem;">
+      <h5 class="card-heading">Vegan</h5>
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1579954115567-dff2eeb6fdeb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29yYmV0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Sorbet</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">49:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--3pic-->
+    <div class="card" style="width: 15rem;">
+      <h5 class="card-heading">Vegan</h5>
+        <img class="card-img-top" src="images/maca1.jpg" >
+        <div class="card-body">
+          <h5 class="card-title">Macarons</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">49:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>  
+
+
+    <!--5pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/vegan1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Raspberry cake</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">49:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--6pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/vegan2.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Valentine's Cake</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">89:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--7pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNoClHpcUFmlLxVPTkqRDg4Zzjmq3pDMm-YA&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Trifle</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">89:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+   <!--8pic--> 
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/glutee1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Mousse</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">79:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--9pic-->  
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/glutee2.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Carrot Cake</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">89:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--10pic-->
+    <div class="card" style="width: 15rem;">
+      <h5 class="card-heading">Gluten-free</h5>
+        <img class="card-img-top" src="images/cookies.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Banana Split</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">79:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+
+</div>
+
+</div>
+</section>
+<!--end dessert menu-->
+
+<!--start drinks menu-->
+<section id="drinks1">
+<hr>
+<h3><b>Drinks</b></h3>
+<div id="page1-drinks">
+
+    <h5><b>Juices and Smoothies</b></h5>
+<hr>
+<!--1pic-->
+<div class="card-columns">
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/juice1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Orange Juice</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">20:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--2pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/juice2.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Watermelon Juice</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">25:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div>  
+    </div>
+    <!--3pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/juice5.jpg" >
+        <div class="card-body">
+          <h5 class="card-title">Berry Juice</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">25:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>  
+    <!--4pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/juice6.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Grape Juice</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">25:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--5pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/juice7.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Pineapple Juice</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">25:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--6pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/smoothie1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Berry Smoothie</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">40:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--7pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/Smoothie-4.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Green Smoothie</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">35:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+   <!--8pic--> 
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/Smoothie-5.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Strawbery Smoothie</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">35:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--9pic-->  
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/Smoothie-6.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Rainbow Smoothie</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">45:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+
+</div>
+</section>
+
+
+<hr>
+<h5><b>Wine & sparkling</b></h5>
+<hr>
+<div class="row">
+  <div class="card-columns">
+    <!-- 1 -->
+    <div class="col card" style="width: 15rem;">
+      <img class="card-img-top" src="images/wine2.jpg" >
+      <div class="card-body">
+        <h5 class="card-title">White Wine</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">89:-</span>
+      <div class="shop-item-details">
+        <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+      </div>
+      </div> 
+  </div>  
+  <!-- 2 -->
+  <div class="col card" style="width: 15rem;">
+    <img class="card-img-top" src="images/wine1.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Red Wine</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <span class="shop-item-price">89:-</span>
+      <div class="shop-item-details">
+        <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+      </div>
+    </div> 
+  </div>
+  <!-- 3 -->
+  <div class="col card" style="width: 15rem;">
+    <img class="card-img-top" src="https://images.unsplash.com/photo-1583728857870-120769f194ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhbXBhZ25lfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    <div class="card-body">
+      <h5 class="card-title">Champagne</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <span class="shop-item-price">130:-</span>
+      <div class="shop-item-details">
+        <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+      </div>
+    </div> 
+  </div>
+</div>
+</div>
+
+<hr>
+<div class="page2-drinks">
+    <h5><b>Liquor</b></h5>
+<hr>
+<!--1pic-->
+<div class="card-columns">
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/cocktail2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Cocktail</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--2pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/cocktail1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Long Island Ice Tea</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--3pic-->
+   
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="images/gin3.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Gin & Tonic</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+      </div> 
+    </div>
+    <!--4pic-->
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="images/sex_on.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Sex on The Beach</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">110:-</span>
+      <div class="shop-item-details">
+        <input type="number" id="Order" name="total_orders" min="1">
+        <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+      </div>
+      </div> 
+    </div>
+    <!--5pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/vodka1.jpg">
+        <div class="card-body">
+          <h5 class="card-title">White Russian</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--6pic-->
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="data:image/jpeg;base64,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">
+      <div class="card-body">
+        <h5 class="card-title">Whisky Sour</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+      </div> 
+    </div>
+    <!-- 7pic -->
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="https://www.simplyrecipes.com/thmb/E6awnqGL4TJQhXxj4fra2bPYI7M=/1024x681/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__01__Old-Fashioned-Cocktail-LEAD-5-1024x681-aa81a798a156453d80d1f7d41de893ff.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Old Fashioned</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+      </div> 
+    </div>
+    <!--8pic--> 
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="images/rum1.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Cuba Libre</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+      </div> 
+    </div>
+    <!--9pic--> <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-KEyb_65p1XEhmT-FMtxc3AGQhM_4GJBoOQ&usqp=CAU">
+      <div class="card-body">
+        <h5 class="card-title">Cosmopolitan</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">110:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+      </div> 
+    </div>
+
+</div>
+
+<div class="page3-drinks">
+
+    <h5><b>Soft Drinks</b></h5>
+<hr>
+<!--1pic-->
+<div class="card-columns">
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHtAo3pRphw3G0Sv8qeQmZlJTF-Jf6pmsXOw&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Coca-Cola</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">35:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--2pic-->
+    <!--3pic-->
+    <div class="card" style="width: 15rem;">
+      <img class="card-img-top" src="data:image/jpeg;base64,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">
+      <div class="card-body">
+        <h5 class="card-title">Fanta</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <span class="shop-item-price">35:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+      </div> 
+    </div>
+    <!--4pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="images/soda2.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Sprite</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          <span class="shop-item-price">35:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    
+    <!--5pic-->
+    <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="data:image/jpeg;base64,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">
+        <div class="card-body">
+          <h5 class="card-title">Sparkling Water</h5>
+          <p class="card-text"></p>
+          <span class="shop-item-price">5:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--6pic-->
+    <div class="card" style="width: 15rem; height: auto;">
+        <img class="card-img-top" src="https://media.allure.com/photos/5a7b2102f80e784e34bcf62d/1:1/w_2847,h_2847,c_limit/GettyImages-913796622.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Still Water</h5>
+          <p class="card-text"></p>
+          <span class="shop-item-price">0:-</span>
+        <div class="shop-item-details">
+          <input type="number" id="Order" name="total_orders" min="1">
+          <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+        </div>
+        </div> 
+    </div>
+    <!--7pic-->
+   <!--8pic--> 
+  <div class="card" style="width: 15rem;">
+    <img class="card-img-top" src="images/cocktail3.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Mocktail</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <span class="shop-item-price">80:-</span>
+    <div class="shop-item-details">
+      <input type="number" id="Order" name="total_orders" min="1">
+  <button class="btn shop-item-button ml-3 pb-0" type="button">ADD</button>
+    </div>
+    </div> 
+  </div>
+    <!--9pic-->  
+</div>
+
+</div>
+<!-- end drinks -->
+
+<!-- cart -->
+<section class="container content-section" id="bottom">
+  <h2 class="section-header">CART</h2>
+  <div class="cart-items">
+  </div>
+  <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">0:-</span>
+  </div>
+  <button class="btn btn-purchase" type="button">PURCHASE</button>
+</section>
+<!-- end cart -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+     
+  </body>
+  <footer class="footer">
+      <ul class="pagination py-3 justify-content-center">
+          <li class="page-item "><a class="page-link" href="order_drinks1.html">1</a></li>
+      </ul>
+  </footer>
+</html>

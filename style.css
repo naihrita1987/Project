@@ -1,0 +1,80 @@
+html{
+    scroll-behavior: smooth;
+}
+.imagesomething{
+    background-image:url("images/menu1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-item{
+    font-size: 22px;
+
+}
+.nav-link{
+    font-size: 22px;
+}
+
+.bg-dark{
+    background: transparent !important;
+  }
+  .bg-dark.scrolled{
+    background:rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .carousel-item{
+      height: 100vh;
+      background: #777;
+      background-position: center;
+      background-size: cover;
+  }
+  .row-featurette{
+  margin: 110px;
+  }
+.top{
+    height: 150px;
+    text-align: center;
+    padding-top: 30px;    
+}
+.col-lg-12{
+   border-radius: 0px;
+}
+.header{
+    color:black;  
+}
+/* About us */
+.container1{
+    border-radius: 20px;
+    text-align: left;
+}
+/* Menu and opening hours page */
+.container {
+    position: relative;
+    text-align: center;
+    padding: 130px;
+    /* margin-right: 0;
+    margin-left: 0; */
+    }
+.container2{
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+.centered {
+    color: white;
+    background-color: black;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+.btn{
+    background-color: black !important;
+    border-radius: 0 !important;
+}
+a{
+    color: black;
+}

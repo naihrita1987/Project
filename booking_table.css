@@ -1,0 +1,81 @@
+body {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  color: seashell;
+}
+body{
+  background-image: url("https://images.unsplash.com/photo-1482275548304-a58859dc31b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+  
+}
+.container{
+  
+  margin: 50px;
+  background-color: #242323;
+  border: 1px solid black;
+  opacity: 0.8;
+  
+}
+.data1 {
+  margin: 20px 0;
+}
+.data2 {
+  width: 49%;
+  display: inline-block;
+  float:left;
+  margin-left: 1%;
+}
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 3px;
+  font-size: 1em;
+}
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 5px;
+  
+}
+
+textarea {
+  height: 120px;
+}
+ 
+button {
+  height: 40px;
+  background:rgba(184, 132, 132);
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Nanum Gothic';
+  
+}
+button:hover {
+  border: 2px solid black;
+}
+h1{
+  text-align: center;
+  color:rgba(184, 132, 132);
+  font-size: 1.5em;
+  font-family: 'Nanum Gothic';
+}
+    
+  a{
+    color: white;
+  }
+  a:hover{
+    color: white;
+    text-decoration: none;
+  }

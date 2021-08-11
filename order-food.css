@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.banner-container{
+    height: 100vh;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand img{
+    width: 100px;
+    height: auto;
+}
+
+h1,h6{
+    color:  #fc5669;
+}
+.btn{
+    background-color: rgba(184, 132, 132, 0.931);
+    color: white;
+}
+.btn:hover{
+    background-color: rgba(250, 139, 139, 0.931);
+    color: white;
+}
+h3,h5{
+    color:  rgba(184, 132, 132, 0.931); 
+    text-align: center;
+}
+.bg-dark{
+    background:rgba(0, 0, 0, 0.65) !important;
+}
+/*menu*/
+hr {
+    border: 1px dotted #ccc;
+}
+input{
+    float: left;
+    width: 50%;
+}
+.inline{
+    display: inline-block;
+   }
+.card-title{
+    color:rgba(184, 132, 132, 0.931);
+}
+    @media (min-width: 576px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .card-columns {
+            column-count: 3;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .card-columns {
+            column-count: 5;
+        }
+    }
+.card-columns{
+    column-gap: 0.5rem;
+    display: inline-block;
+    margin-left: 18px; /* Added */
+    margin-right: 18px;
+    float: none; /* Added */
+    /*margin-bottom: 20px; Added */
+}
+
+#order{
+      width: 3rem;
+  }
+  /*footer*/
+  .footer{
+      background-color: rgba(184, 132, 132, 0.931);
+  }
+.page-link{
+    background-color: rgba(184, 132, 132, 0.931);
+    color: white;
+    border-color:rgba(184, 132, 132, 0.931);
+}
+.page-link:hover{
+    background-color: rgba(253, 141, 141, 0.931);
+    color: white;
+    border-color:rgba(184, 132, 132, 0.931);
+}
+#price{
+    color:rgba(184, 132, 132, 0.931)
+   }
+.card-heading{
+    text-align: center;
+    color:rgba(184, 132, 132, 0.931);
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-icons{
+    color: white;
+}
+.navbar-brand img{
+    width: 100px;
+    height: auto;
+}
+h1,h6{
+    color:  #fc5669;
+}
+.btn{
+    background-color: rgba(184, 132, 132, 0.931);
+    color: white;
+}
+.btn:hover{
+    background-color: rgba(250, 139, 139, 0.931);
+    color: white;
+}
+/*menu*/
+hr {
+    border: 1px dotted #ccc;
+}
+input{
+    float: left;
+    width: 50%;
+}
+.inline{
+    display: inline-block;
+   }
+.card-title{
+    color:rgba(184, 132, 132, 0.931);
+}
+@media (min-width: 576px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+    
+@media (min-width: 768px) {
+        .card-columns {
+            column-count: 3;
+        }
+    }
+    
+@media (min-width: 992px) {
+        .card-columns {
+            column-count: 5;
+        }
+    }
+.card-columns{
+    column-gap: 0.5rem;
+    display: inline-block;
+    margin-left: 18px; /* Added */
+    margin-right: 18px;
+    float: none; /* Added */
+    /*margin-bottom: 20px; Added */
+    
+  }
+#order{
+      width: 3rem;
+  }
+  /*footer*/
+.footer{
+      background-color: rgba(184, 132, 132, 0.931);
+  }
+
+.page-link:hover{
+    background-color: rgba(253, 141, 141, 0.931);
+    color: white;
+    border-color:rgba(184, 132, 132, 0.931);
+}

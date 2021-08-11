@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="booking_table.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Book your Table</h1>
+        <form action="reservation" method="post">
+            <div class="data1">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="visitor_name" >
+            </div>
+            <div class="data1">
+              <label for="email">Your E-mail</label>
+              <input type="email" id="email" name="visitor_email" >
+            </div>
+            <div class="data1">
+              <label for="phone">Your Phone</label>
+              <input type="tel" id="phone" name="visitor_phone">
+            </div>
+            <div class="data2">
+              <label for="adult">Adults</label>
+              <input type="number" id="adult" name="total_adults" min="1">
+            </div>
+            <div class="data2">
+              <label for="child">Children</label>
+              <input type="number" id="child" name="total_children" min="0">
+            </div>
+            <div class="data3">
+              <label for="select_date">Select Date</label>
+              <input type="date" id="visitdate" name="visit">
+            </div>
+            <div class="data4">
+              <label for="message">Anything Else?</label>
+              <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+            </div>
+            <button type="submit">Book Table</button>
+            <button type="reset"><a href="circus_restaurant.html">Home </a></button>
+          </form>
+        </div>
+    </body>
+</html>
